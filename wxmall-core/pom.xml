@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.wx.mall</groupId>
+  <artifactId>wxmall-core</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>Archetype - wxmall-core</name>
+  <url>http://maven.apache.org</url>
+
+  <parent>
+    <artifactId>wxmall-parent</artifactId>
+    <groupId>org.wx.mall</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <dependencies>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+      </dependency>
+
+      <!-- spring boot 分页插件 -->
+      <dependency>
+        <groupId>com.github.pagehelper</groupId>
+        <artifactId>pagehelper-spring-boot-starter</artifactId>
+      </dependency>
+
+      <!-- jwt -->
+      <dependency>
+        <groupId>com.auth0</groupId>
+        <artifactId>java-jwt</artifactId>
+      </dependency>
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>5.1.21</version>
+      </dependency>
+      <!-- 微信小程序java sdk -->
+      <dependency>
+        <groupId>com.github.binarywang</groupId>
+        <artifactId>weixin-java-miniapp</artifactId>
+      </dependency>
+  </dependencies>
+</project>
